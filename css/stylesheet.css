@@ -1,0 +1,19 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;       
+  }
+
+  @media (max-width: 600px) {
+    #lgimg {
+        display: none;
+    }
+}
+header{
+  text-align: center;
+}
+
+img {
+  border-radius: 25px;
+  width: 175px;
+  height: 175px; 
+ }
