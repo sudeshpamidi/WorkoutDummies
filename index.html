@@ -78,14 +78,11 @@
       <div class="row">
         <div class="col-md-4">  
             <div class="text-center">                                      
-                <figure class="figure">
-                    <div class="image">
-                    <img src="img/kettlebell-workout.jpg" class="figure-img img-fluid rounded" alt="...">
-                    </div>
-                    <figcaption class="figure-caption text-right">Kattle Bell Workout</figcaption>
-                  </figure>
-                
-                <h2>Cardio</h2>
+                <figure class="figure image">                   
+                    <img src="img/workout.jpeg" class="figure-img img-fluid rounded" alt="workout">                   
+                    <figcaption class="figure-caption text-right">Workout</figcaption>
+                  </figure>                
+                <h3>Cardio</h3>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                   condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
                   Donec sed odio dui. </p>
@@ -95,12 +92,12 @@
         </div> 
         <div class="col-md-4">
           <div class="text-center ">
-            <figure class="figure">          
-              <div class="image"><img src="img/upper-body-workout_sm.jpg" class="figure-img img-fluid rounded" alt="..."> </div>
-              <figcaption class="figure-caption text-right">Kattle Bell Workout</figcaption>
+            <figure class="figure image">          
+              <img src="img/cycling.jpg" class="figure-img img-fluid rounded" alt="...">
+              <figcaption class="figure-caption text-right">cycling</figcaption>
             </figure>
           </div>          
-          <h2>Kattle Bell Workout</h2>
+          <h3>Kattle Bell Workout</h3>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
             condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
             Donec sed odio dui. </p>
@@ -109,12 +106,10 @@
         </div>
         <div class="col-md-4">  
             <div class="text-center">                                      
-                <figure class="figure">
-                    <div class="image">
-                    <img src="img/kettlebell-workout.jpg" class="figure-img img-fluid rounded" alt="...">
-                    </div>
-                    <figcaption class="figure-caption text-right">Kattle Bell Workout</figcaption>
-                  </figure>
+                <figure class="figure image">                    
+                    <img src="img/running.jpg" class="figure-img img-fluid rounded" alt="...">                    
+                 <figcaption class="figure-caption text-right">cardio</figcaption>
+                </figure>
                 
                 <h2>Cardio</h2>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
@@ -133,7 +128,7 @@
         <div class="col-md-4">
           <figure class="figure">
               <div class="image">
-            <img src="img/upper-body-workout_sm.jpg" class="figure-img img-fluid rounded" alt="..."> 
+            <img src="img/bodybuilding.jpg" class="figure-img img-fluid rounded" alt="..."> 
             </div>
             <figcaption class="figure-caption text-right">Kattle Bell Workout</figcaption>
           </figure>          
@@ -194,8 +189,8 @@
 
               <div class="text-center">
                 <video id="vid" width="320" height="240" controls>
-                  <source src="media/upperbody.mp4" type="video/mp4">
-                  <source src="media/cardio.webm" type="video/webm">
+                  <source src="media/videoplayback.mp4" type="video/mp4">
+                  <source src="media/videoplayback.webm" type="video/webm">
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -252,14 +247,7 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-  <script>
-    var video = document.getElementById('vid');
-    document.getElementById('close').addEventListener('click', function () {
-      video.pause();
-      video.currentTime = 0;
-      video.playbackRate = 1;
-    }, false);
-  </script>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -270,6 +258,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-</body>
+
+    <script>
+      var video = document.getElementById('vid');
+      document.getElementById('close').addEventListener('click', function () {
+        video.pause();
+        video.currentTime = 0;
+        video.playbackRate = 1;
+      }, false);
+    </script>
+    
+  </body>
 
 </html>
