@@ -18,23 +18,25 @@
     <title>workOut Dummies</title>
 
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+        table.table td a.add {
+            color: #27C46B;
         }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+        table.table td a.edit {
+            color: #FFC107;
         }
+
+        table.table td a.delete {
+            color: #E34724;
+        }
+
+        table.table .form-control.error {
+            border-color: #f50000;
+        }
+
         table.table td .add {
-		display: none;
-	}
+            display: none;
+        }
     </style>
 </head>
 
@@ -50,7 +52,8 @@
             <div class="ml-auto">
                 <ul class="navbar-nav my-2 my-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="logworkout.html">Log Workout <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="logworkout.html">Log Workout <span
+                                class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
@@ -71,46 +74,83 @@
         <div class="jumbotron">
             <div class="container">
                 <h1>workOut Dummies</h1>
-                <p>This is a template </p>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout
+                    called a
+                    jumbotron and three supporting pieces of content. Use it as a starting point to create something
+                    more unique.
+                </p>
             </div>
         </div>
     </header>
     <!--End header -->
 
     <main>
-
-        <div class="container signup-form">
-            
+        <div class="container">
             <div class="row">
-                    <div class="col-sm-8 offset-sm-2 ">  
-                            <h2 class="display-5 mb-5"> Log Workout</h2>                                              
-                    </div>    
+                <div class="col-sm-8 offset-sm-2 ">
+                    <h2 class="display-5 mb-5"> Log Workout</h2>
+                </div>
             </div>
-            <div class="row">                    
-            <div class="col-sm-8 offset-sm-2 ">                
-            <table class="table" id="tablelog">
-                <thead>
-                    <tr>
-                        <th scope="col">Workout</th>
-                        <th scope="col">Time/Steps</th>
-                        <th scope="col">Calories</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="table_body">
-                        <tr>
+
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <table class="table" id="tablelog">
+                        <thead>
+                            <tr>
+                                <th scope="col">Workout</th>
+                                <th scope="col">Time/Steps</th>
+                                <th scope="col">Calories</th>
+                                <th width="30%">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table_body">
+                            <tr>
+                                <td>cardio</td>
+                                <td>30</td>
+                                <td>250</td>
+                                <td>
+                                    <a class="add" title="Add" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE03B;</i></a> 
+                                    <a class="edit" title="Edit" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE254;</i></a>                                    
+                                    <a class="delete" title="Delete" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE872;</i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Walking</td>
+                                <td>30</td>
+                                <td>250</td>
+                                <td>
+                                    <a class="add" title="Add" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE03B;</i>
+                                    </a>
+                                    <a class="edit" title="Edit" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE254;</i>
+                                    </a>
+                                    <a class="delete" title="Delete" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE872;</i></a>
+
+                                </td>
+                            </tr>
+                            <tr>
                                 <td>Workout</td>
                                 <td>30</td>
                                 <td>250</td>
                                 <td>
-                                        <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                        <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                        <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                    <a class="add" title="Add" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE03B;</i>
+                                    </a>
+                                    <a class="edit" title="Edit" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE254;</i>
+                                    </a>
+                                    <a class="delete" title="Delete" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE872;</i></a>
                                 </td>
-                         </tr>                                     
-                         <tr>                        
+                            </tr>
+                            <tr>
                                 <td>
-                                    <select class="custom-select inputcontrol" id="workoutlist" 
+                                    <select class="custom-select inputcontrol" id="workoutlist"
                                         aria-label="Example select with button addon">
                                         <option value="">Select a List</option>
                                         <option value="Cardio">Cardio</option>
@@ -120,22 +160,29 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <input type="number"  min="0" max="10000" class="inputcontrol form-control" id="steps" placeholder="0">
+                                    <input type="number" min="0" max="10000" width="50px"
+                                        class="inputcontrol form-control" id="steps" placeholder="0">
                                 </td>
                                 <td>
-                                    <input type="number" class="inputcontrol form-control " id="calories" id ="calories">
+                                    <input type="number" width="50px" class="inputcontrol form-control " id="calories"
+                                        id="calories">
                                 </td>
-                                <td>                                                                      
-                                        <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                        <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                        <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>                                        
-                                </td>                            
-                        </tr>                    
-                </tbody>
-            
-            </table>
-        </div>
-    </div>
+                                <td>
+                                    <a class="add" title="Add" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE03B;</i>
+                                    </a>
+                                    <a class="edit" title="Edit" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE254;</i>
+                                    </a>
+                                    <a class="delete" title="Delete" data-toggle="tooltip">
+                                        <i class="material-icons">&#xE872;</i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
 
         </div> <!-- /container -->
 
@@ -163,87 +210,74 @@
 
 
     <script type="text/javascript">
-        $(document).ready(function(){
-            
-            var addednewrow = true;            
+        $(document).ready(function () {
+
+            var addednewrow = true;
             //$('[data-toggle="tooltip"]').tooltip();
-            var actions = $("table td:last-child").html();    
-            
-            // Append table with add row form on add new button click
-                
-            
-                var index = $("table tbody tr:last-child").index();
-                /*
-                var row = '<tr>' +
-                    '<td><input type="text" class="form-control" name="name" id="name"></td>' +
-                    '<td><input type="text" class="form-control" name="department" id="department"></td>' +
-                    '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
-                    '<td>' + actions + '</td>' +
-                '</tr>';
-                $("table").append(row);		
-                */
-                var controls = $("table tbody tr:last-child").html(); 
-                alert(controls);
-            
-                $("table tbody tr").eq(index ).find(".add, .edit, .delete").toggle();
-                //$('[data-toggle="tooltip"]').tooltip();               
-        
-          
-        
-            
+            var actions = $("table td:last-child").html();
+
+            //Get the last controls  into a variable                      
+            var index = $("table tbody tr:last-child").index();
+            var controls = $("table tbody tr:last-child").html();
+
+            $("table tbody tr").eq(index).find(".add, .edit, .delete").toggle();
+            //$('[data-toggle="tooltip"]').tooltip();                                         
+
             // Add row on add button click
-            $(document).on("click", ".add", function(){
+            $(document).on("click", ".add", function () {
                 var empty = false;
                 //var input = $(this).parents("tr").find('input[type="text"]');
                 var input = $(this).parents("tr").find(".inputcontrol");
 
-                input.each(function(){                    
-                    if(!$(this).val()){
+                //Validate the control's data.
+                input.each(function () {
+                    if (!$(this).val()) {
                         $(this).addClass("error");
                         empty = true;
-                    } else{
+                    } else {
                         $(this).removeClass("error");
                     }
                 });
                 $(this).parents("tr").find(".error").first().focus();
-                if(!empty){
-                    input.each(function(){
+
+                if (!empty) {
+                    input.each(function () {
                         $(this).parent("td").html($(this).val());
-                    });		                                    
-                    
-                    
-                    if($(this).parents("tr").is(':last-child'))
-                        {                            
-        /////                    
-                var index2 = $("table tbody tr:last-child").index();
-                var row = '<tr>' + controls+ '</tr>';                                                    
-                            
-                $("table").append(row);		
-                $("table tbody tr").eq(index2 + 1).find(".edit, .delete").toggle();                            
-                $('[data-toggle="tooltip"]').tooltip();               
-        /////                    
-                            
-                        } 
-                        else {
-                            $(this).parents("tr").find(".add, .edit").toggle();   
-                        }                               
-                }		
+                    });
+
+                    $(this).parents("tr").find(".add, .edit ").toggle();
+
+                    //is this a last child
+                    if ($(this).parents("tr").is(':last-child')) {
+                        var index2 = $("table tbody tr:last-child").index();
+                        var row = '<tr>' + controls + '</tr>';
+                        alert(controls);
+                        $("table").append(row);
+                        
+                        $("table tbody tr").eq(index2 + 1).find(".add, .edit ").toggle();
+                        //$('[data-toggle="tooltip"]').tooltip();               
+                    }
+                    //else {
+                    //    $(this).parents("tr").find(".add, .edit").toggle();
+                    //}
+                }
             });
             // Edit row on edit button click
-            $(document).on("click", ".edit", function(){		
-                $(this).parents("tr").find("td:not(:last-child)").each(function(){
-                    $(this).html('<input type="text" class="form-control inputcontrol" value="' + $(this).text() + '">');                        
-                });		
-                $(this).parents("tr").find(".add, .edit").toggle();                                                   
+            $(document).on("click", ".edit", function () {
+                $(this).parents("tr").find("td:not(:last-child)").each(function () {
+                    $(this).html('<input type="text" class="form-control inputcontrol" value="' + $(this).text() + '">');
+                });
+                $(this).parents("tr").find(".add, .edit").toggle();
             });
             // Delete row on delete button click
-            $(document).on("click", ".delete", function(){
+            $(document).on("click", ".delete", function () {
                 $(this).parents("tr").remove();
                 $(".add-new").removeAttr("disabled");
                 //addnew= true;
             });
         });
-        </script>    
+    </script>
 
 </body>
+
 </html>
