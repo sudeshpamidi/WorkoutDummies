@@ -164,7 +164,7 @@
                                         class="inputcontrol form-control" id="steps" placeholder="0">
                                 </td>
                                 <td>
-                                    <input type="number" width="50px" class="inputcontrol form-control " id="calories"
+                                    <input type="number" width="50px" class="inputcontrol form-control" id="calories"
                                         id="calories">
                                 </td>
                                 <td>
@@ -276,6 +276,10 @@
             // Delete row on delete button click
             $(document).on("click", ".delete", function () {
                 $(this).parents("tr").remove();               
+            });
+
+            $(".steps" ).blur(function() {                                
+                $(this).parents("tr").find(".calories").val(10 * $(this).val());               
             });
         });
     </script>
