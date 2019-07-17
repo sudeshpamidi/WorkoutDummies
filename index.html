@@ -13,22 +13,6 @@
 
   <title>workOut Dummies</title>
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -51,6 +35,9 @@
           <li class="nav-item">
             <a class="nav-link" href="register.html">Register</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>          
         </ul>
       </div>
     </div>
@@ -72,17 +59,16 @@
   <!--End header -->
 
   <main>
-
     <div class="container home-form" id="maincontainer">
-      <!-- Example row of columns -->
+      <!-- Row1 -->
       <div class="row">
         <div class="col-md-4">  
             <div class="text-center">                                      
                 <figure class="figure image">                   
                     <img src="img/workout.jpeg" class="figure-img img-fluid rounded" alt="workout">                                  
-                    <figcaption class="figure-caption text-right">Workout</figcaption>
+                    <figcaption class="figure-caption text-right">Weight Lifting</figcaption>
                   </figure>                
-                <h3>Cardio</h3>
+                <h3>Weight Lifting</h3>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                   condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
                   Donec sed odio dui. </p>
@@ -91,18 +77,19 @@
             </div>
         </div> 
         <div class="col-md-4">
-          <div class="text-center ">
+          <div class="text-center">
             <figure class="figure image">          
-              <img src="img/cycling.jpg" class="figure-img img-fluid rounded" alt="...">
-              <figcaption class="figure-caption text-right">cycling</figcaption>
+              <img src="img/cycling.jpg" class="figure-img img-fluid rounded" alt="Cycling">
+              <figcaption class="figure-caption text-right">Cycling</figcaption>
             </figure>
-          </div>          
-          <h3>Kattle Bell Workout</h3>
+               
+          <h3>Cycling</h3>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
             condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
             Donec sed odio dui. </p>
             <p><a class="btn text-white btn-secondary " role="button" data-toggle="modal"
               data-target="#myModal">View details &raquo;</a></p> 
+          </div>
         </div>
         <div class="col-md-4">  
             <div class="text-center">                                      
@@ -121,15 +108,16 @@
         </div> 
       </div>
 
+      <!-- Row2 -->
       <div class="row">
         <div class="col-md-4">  
           <div class="text-center">                                      
               <figure class="figure image">                    
-                  <img src="img/bodybuilding.jpg" class="figure-img img-fluid rounded" alt="...">                    
-               <figcaption class="figure-caption text-right">cardio</figcaption>
+                  <img src="img/yoga.jpg" class="figure-img img-fluid rounded" alt="...">                    
+               <figcaption class="figure-caption text-right">Yoga</figcaption>
               </figure>
               
-              <h2>Cardio</h2>
+              <h2>Yoga</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                 condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
                 Donec sed odio dui. </p>
@@ -140,11 +128,10 @@
         <div class="col-md-4">  
           <div class="text-center">                                      
               <figure class="figure image">                    
-                  <img src="img/bodybuilding.jpg" class="figure-img img-fluid rounded" alt="...">                    
-               <figcaption class="figure-caption text-right">cardio</figcaption>
-              </figure>
-              
-              <h2>Cardio</h2>
+                  <img src="img/abs.jpg" class="figure-img img-fluid rounded" alt="abs">                    
+               <figcaption class="figure-caption text-right">Abs</figcaption>
+              </figure>              
+              <h2>Abs</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                 condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
                 Donec sed odio dui. </p>
@@ -155,11 +142,11 @@
         <div class="col-md-4">  
           <div class="text-center">                                      
               <figure class="figure image">                    
-                  <img src="img/bodybuilding.jpg" class="figure-img img-fluid rounded" alt="...">                    
-               <figcaption class="figure-caption text-right">cardio</figcaption>
+                  <img src="img/crossfit-full.jpg" class="figure-img img-fluid rounded" alt="crossfit">                    
+               <figcaption class="figure-caption text-right">Crossfit</figcaption>
               </figure>
               
-              <h2>Cardio</h2>
+              <h2>Crossfit</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                 condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
                 Donec sed odio dui. </p>
@@ -169,17 +156,17 @@
         </div> 
 
       </div>
-      <hr>
 
+      <hr>
 
       <!-- Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        aria-labelledby="myModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h4 class="modal-title" id="myModalTitle">
-                  Kattle Bell Workout
+                  Running
                 </h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -232,10 +219,6 @@
         </div>
       </div>
       <!-- End Modal -->
-          
-        </div>
-      </div> 
-    
 
     </div> <!-- /container -->
 
@@ -250,9 +233,6 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -262,18 +242,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
-  <script>
-  // This script is to close the video up modal close.    
-  $(document).ready(function(){
-  $("#myModal").on('hidden.bs.modal', function(){      
-        var video = document.getElementById('vid');        
-        video.pause();
-        video.currentTime = 0;
-        video.playbackRate = 1;
-      });
-  });
-  </script>
+  <script src="js/index.js"></script>
     
   </body>
 </html>
