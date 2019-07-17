@@ -92,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row logworkouttable">
                 <div class="col-sm-8 offset-sm-2">
                     <table class="table" id="tablelog">
                         <thead>
@@ -212,7 +212,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
-            var addednewrow = true;
+            
             //$('[data-toggle="tooltip"]').tooltip();
             var actions = $("table td:last-child").html();
 
@@ -245,23 +245,26 @@
                         $(this).parent("td").html($(this).val());
                     });
 
-                    $(this).parents("tr").find(".add, .edit ").toggle();
-
                     //is this a last child
                     if ($(this).parents("tr").is(':last-child')) {
+
+                        //This is not last row
+                        $(this).parents("tr").find(".add, .edit, .delete").toggle();
+
                         var index2 = $("table tbody tr:last-child").index();
                         var row = '<tr>' + controls + '</tr>';
-                        alert(controls);
+                        console.log('Controls ' + controls);
                         $("table").append(row);
                         
-                        $("table tbody tr").eq(index2 + 1).find(".add, .edit ").toggle();
+                        $("table tbody tr").eq(index2 + 1).find(".add, .edit, .delete").toggle();
                         //$('[data-toggle="tooltip"]').tooltip();               
                     }
-                    //else {
-                    //    $(this).parents("tr").find(".add, .edit").toggle();
-                    //}
+                    else {
+                        $(this).parents("tr").find(".add, .edit").toggle();
+                    }
                 }
             });
+
             // Edit row on edit button click
             $(document).on("click", ".edit", function () {
                 $(this).parents("tr").find("td:not(:last-child)").each(function () {
@@ -269,11 +272,10 @@
                 });
                 $(this).parents("tr").find(".add, .edit").toggle();
             });
+
             // Delete row on delete button click
             $(document).on("click", ".delete", function () {
-                $(this).parents("tr").remove();
-                $(".add-new").removeAttr("disabled");
-                //addnew= true;
+                $(this).parents("tr").remove();               
             });
         });
     </script>
