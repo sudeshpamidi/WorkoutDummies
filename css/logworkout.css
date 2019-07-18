@@ -17,3 +17,12 @@ table.table .form-control.error {
 table.table td .add {
     display: none;
 }
+.colwidth {
+    width : 30%
+}
+
+/*
+form .alert {
+    display: none;    
+}
+*/

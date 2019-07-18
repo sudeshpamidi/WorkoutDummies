@@ -64,21 +64,68 @@
 
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2 ">
-                    <h2 class="display-5 mb-5"> Log Workout</h2>
-                </div>
-            </div>
 
-            <div class="row logworkouttable">
+            <div class="row schedule-form">
                 <div class="col-sm-8 offset-sm-2">
+                  <h4 class="mt-2"> Schedule Workout</h4>
+
+                  <form method="POST" action="#" id="formschedule">
+                  <div class="form-group row">
+                        <div class="col-2"> 
+                            <label for="selectWorkout">Workout</label>
+                        </div>                                                        
+                        <div class="col-10">                                                              
+                            <select class="form-control" id="selectWorkout" required="required">
+                                    <option selected value="">Choose...</option>
+                                    <option value="Zumba">Zumba</option>
+                                    <option value="Yoga">Yoga</option>
+                                    <option value="Arobics">Arobics</option>                                        
+                            </select>
+                        </div>
+                    </div>                      
+                    <div class="form-group row">
+                            <div class="col-2"> 
+                                    <label class="mr-sm-2" for="date">Date</label>
+                            </div>                                                        
+                            <div class="col-10">   
+                                    <input class="form-control" type="date" value="2019-08-10" id="date" required="required">                                                           
+                            </div>
+                    </div>                                                                
+                    <div class="form-group row">
+                            <div class="col-2"> 
+                                    <label class="mr-sm-2" for="time">Time</label>
+                            </div>                                                        
+                            <div class="col-10">   
+                                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="time" required="required">
+                                            <option selected value="">Choose...</option>
+                                            <option value="10:00">9:00-10:00 AM</option>
+                                            <option value="6:00">6:00-7:00 PM</option>
+                                            <option value="7:00">7:00-8:00 PM</option>                            
+                                    </select>
+                            </div>
+                    </div>                                        
+                    <div class="col-sm-12 mb-2 text-center">                                
+                            <button type="submit" id="submit" class="btn btn-primary">Schedule</button>
+                    </div>
+                    <div class="col-sm-12 text-center" >                                
+                        <div id="alert" class="alert alert-primary" style="display:none" role="alert" >
+                            Your Workout is Scheduled
+                        </div>                                
+                    </div>                            
+                  </form>
+                </div>
+        </div>                                                      
+                                        
+          <div class="row logworkouttable">
+                <div class="col-sm-8 offset-sm-2">
+                        <h4 class="mt-2"> Log Workout</h4>
                     <table class="table" id="tablelog">
                         <thead>
                             <tr>
                                 <th scope="col">Workout</th>
                                 <th scope="col">Time/Steps</th>
                                 <th scope="col">Calories</th>
-                                <th width="30%">Action</th>
+                                <th class = "colwidth" scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody id="table_body">
@@ -112,6 +159,39 @@
                                 </td>
                             </tr>
                             <tr>
+                                    <td>Zumba</td>
+                                    <td>30</td>
+                                    <td>250</td>
+                                    <td>
+                                        <a class="add" title="Add" data-toggle="tooltip">
+                                            <i class="material-icons">&#xE03B;</i>
+                                        </a>
+                                        <a class="edit" title="Edit" data-toggle="tooltip">
+                                            <i class="material-icons">&#xE254;</i>
+                                        </a>
+                                        <a class="delete" title="Delete" data-toggle="tooltip">
+                                            <i class="material-icons">&#xE872;</i></a>
+    
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td>Yoga</td>
+                                        <td>30</td>
+                                        <td>250</td>
+                                        <td>
+                                            <a class="add" title="Add" data-toggle="tooltip">
+                                                <i class="material-icons">&#xE03B;</i>
+                                            </a>
+                                            <a class="edit" title="Edit" data-toggle="tooltip">
+                                                <i class="material-icons">&#xE254;</i>
+                                            </a>
+                                            <a class="delete" title="Delete" data-toggle="tooltip">
+                                                <i class="material-icons">&#xE872;</i></a>
+        
+                                        </td>
+                                    </tr>
+            
+                            <tr>
                                 <td>Workout</td>
                                 <td>30</td>
                                 <td>250</td>
@@ -137,11 +217,11 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <input type="number" min="0" max="10000" width="50px"
+                                    <input type="number" min="0" max="10000" 
                                         class="inputcontrol form-control" id="steps" placeholder="0">
                                 </td>
                                 <td>
-                                    <input type="number" width="50px" class="inputcontrol form-control" id="calories">
+                                    <input type="number" class="inputcontrol form-control" id="calories">
                                 </td>
                                 <td>
                                     <a class="add" title="Add" data-toggle="tooltip">
