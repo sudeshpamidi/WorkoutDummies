@@ -3,7 +3,7 @@ $(document).ready(function () {
     //Get the last controls  into a variable                      
     var index = $("table tbody tr:last-child").index();
     var controls = $("table tbody tr:last-child").html();           
-    console.log(controls);
+    //console.log(controls);
 
     $("table tbody tr").eq(index).find(".add, .edit, .delete").toggle();
     //$('[data-toggle="tooltip"]').tooltip;                                         
@@ -65,4 +65,11 @@ $(document).ready(function () {
     $("#steps" ).blur(function() {              
         $(this).parents("tr").find("#calories").val($(this).val() * 20 ); 
     });
+
+    $("#formschedule").submit(function( event ) {
+        //document.getElementsByClassName("alert").style.display ="block";        
+        //$('#formschedule #alert').toggle();
+        event.preventDefault();                        
+      })
+
 });

@@ -11,13 +11,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/stylesheet.css">
-
+  <link rel="stylesheet" href="css/aboutus.css">
   <title>workOutDummies</title>
-  <style>
-    .fa-check {
-      color: green;
-    }
-  </style>
 
 </head>
 
@@ -55,8 +50,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-
-        <div class="bd-example">
+        <div class="bd">
           <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
@@ -104,43 +98,78 @@
   <main>
     <div class="container home-form" id="maincontainer">
       <!-- Example row of columns -->
-      <div class="row">
+      <div class="row ml-2">
         <article id="mission">
           <header>
             <h4>All about OUR GYM</h4>
           </header>
           <section>
-<!--            <header>
-              <h6>All about OUR GYM</h6>
-            </header>
--->            
             <aside>
               <p><img class="imgage-fluid image-sm" src="img/bodybuilding.jpg" alt="WorkOut"></p>
             </aside>
-
             <div>
               <p>workoutDummies founded in 1984, is one of the fastest growing health club chains in the U.S. and
                 presently operates nearly 700 locations in 26 states and Canada. Its mission is to help as many people
                 as possible achieve the benefits of a healthy lifestyle by creating a nationwide network of health
                 clubs, offering its members the widest range of amenities and the friendliest service at an affordable
                 price </p>
-
-              <p>
+              
                 <ul class="fa-ul">
                   <li><i class="fa-li fa fa fa-check"></i>Clean lockers</li>
                   <li><i class="fa-li fa fa fa-check"></i>State of the art equipmements</li>
                   <li><i class="fa-li fa fa fa-check"></i>Professional instructors</li>
                   <li><i class="fa-li fa fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicin</li>
                   <li><i class="fa-li fa fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicin</li>
-
-                </ul>
-              </p>
-
+                </ul>              
             </div>
 
           </section>
         </article>
       </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>Testimonial</h4>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="card-deck">
+          <div class="card">
+            <div class="image-profile text-center"><img src="img/profilephoto3.png"
+                class="card-img-top rounded-circle image-sm" alt="..."></div>
+            <div class="card-body">
+              <h5 class="card-title">Mark Holmes, CEO</h5>
+              <p class="card-text font-italic">&quot;
+                There is a difference between exercising and training. I see many people trying to lose weight by
+                getting on an elliptical and going at it. While this approach will help your cardiovascular condition,
+                it does very little to burn fat.
+                &quot;</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-profile text-center"><img src="img/profilephoto1.webp"
+                class="card-img-top rounded-circle image-sm" alt="..."></div>
+            <div class="card-body">
+              <h5 class="card-title">Katie Johnson, Manager</h5>
+              <p class="card-text font-italic">&quot;A trainer who could help me improve strength, lose a few pounds and
+                perhaps as a result &quot;</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-profile"><img src="img/profilephoto2.jpg" class="card-img-top rounded-circle image-sm"
+                alt="..."></div>
+            <div class="card-body">
+              <h5 class="card-title">Jane Mars, Trainer</h5>
+              <p class="card-text font-italic">&quot;A trainer who could help me improve strength, lose a few pounds and
+                perhaps as a result &quot;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The schedule table begins here -->
       <div class="row">
         <div class="col-md-12">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -161,8 +190,8 @@
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
               <div class="row logworkouttable">
                 <div class="col-sm-8 offset-sm-2">
-                  <table class="table" id="tablelog">
-                    <tbody id="table_body">
+                  <table class="table" id="tablelog3">
+                    <tbody id="table_body3">
                       <tr>
                         <td><i class="fa fa-heartbeat" aria-hidden="true"></i><span> Weight Lifting</span></td>
                         <td><i class="fa fa-clock-o" aria-hidden="true"></i><span> 8:00am - 10am</span></td>
@@ -187,6 +216,12 @@
                         <td><i class="fa fa-user" aria-hidden="true"></i><span> Christina</span></td>
                         <td><a class="btn btn-primary" href="register.html">Join Us</a></td>
                       </tr>
+                      <tr>
+                        <td><i class="fa fa-heartbeat" aria-hidden="true"></i><span> Zumba</span></td>
+                        <td><i class="fa fa-clock-o" aria-hidden="true"></i><span> 9:00am - 10am</span></td>
+                        <td><i class="fa fa-user" aria-hidden="true"></i><span> Pamela Harries</span></td>
+                        <td><a class="btn btn-primary" href="register.html">Join Us</a></td>
+                      </tr>
                     </tbody>
 
                   </table>
@@ -196,8 +231,8 @@
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div class="row logworkouttable">
                 <div class="col-sm-8 offset-sm-2">
-                  <table class="table" id="tablelog">
-                    <tbody id="table_body">
+                  <table class="table" id="tablelog1">
+                    <tbody id="table_body1">
                       <tr>
                         <td><i class="fa fa-heartbeat" aria-hidden="true"></i><span> Weight Lifting</span></td>
                         <td><i class="fa fa-clock-o" aria-hidden="true"></i><span> 8:00am - 10am</span></td>
@@ -231,8 +266,8 @@
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
               <div class="row logworkouttable">
                 <div class="col-sm-8 offset-sm-2">
-                  <table class="table" id="tablelog">
-                    <tbody id="table_body">
+                  <table class="table" id="tablelog2">
+                    <tbody id="table_body2">
                       <tr>
                         <td><i class="fa fa-heartbeat" aria-hidden="true"></i><span> Weight Lifting</span></td>
                         <td><i class="fa fa-clock-o" aria-hidden="true"></i><span> 8:00am - 10am</span></td>
@@ -269,9 +304,12 @@
       </div>
 
     </div>
-
-    </div>
   </main>
+  <!-- Begining of footer -->
+  <footer class="container">
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+  </footer>
+  <!-- End of container -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
