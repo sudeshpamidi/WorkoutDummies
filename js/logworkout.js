@@ -1,20 +1,16 @@
 $(document).ready(function () {
-
             
-    //$('[data-toggle="tooltip"]').tooltip();
-    //var actions = $("table td:last-child").html();
-
     //Get the last controls  into a variable                      
     var index = $("table tbody tr:last-child").index();
     var controls = $("table tbody tr:last-child").html();           
-    
+    console.log(controls);
+
     $("table tbody tr").eq(index).find(".add, .edit, .delete").toggle();
-    //$('[data-toggle="tooltip"]').tooltip();                                         
+    //$('[data-toggle="tooltip"]').tooltip;                                         
 
     // Add row on add button click
     $(document).on("click", ".add", function () {
-        var empty = false;
-        //var input = $(this).parents("tr").find('input[type="text"]');
+        var empty = false;    
         var input = $(this).parents("tr").find(".inputcontrol");
 
         //Validate the control's data.
@@ -41,11 +37,10 @@ $(document).ready(function () {
 
                 var index2 = $("table tbody tr:last-child").index();
                 var row = '<tr>' + controls + '</tr>';
-                console.log('Controls ' + controls);
+                
                 $("table").append(row);
                 
-                $("table tbody tr").eq(index2 + 1).find(".add, .edit, .delete").toggle();
-                //$('[data-toggle="tooltip"]').tooltip();               
+                $("table tbody tr").eq(index2 + 1).find(".add, .edit, .delete").toggle();                
             }
             else {
                 $(this).parents("tr").find(".add, .edit").toggle();
@@ -66,7 +61,8 @@ $(document).ready(function () {
         $(this).parents("tr").remove();               
     });
 
-    $(".steps" ).blur(function() {                                
-        $(this).parents("tr").find(".calories").val(10 * $(this).val());               
+    // Calculate the calories
+    $("#steps" ).blur(function() {              
+        $(this).parents("tr").find("#calories").val($(this).val() * 20 ); 
     });
 });
