@@ -66,10 +66,19 @@ $(document).ready(function () {
         $(this).parents("tr").find("#calories").val($(this).val() * 20 ); 
     });
 
+    $("document").on("blur", ".steps", function () {
+        $(this).parents("tr").find("#calories").val($(this).val() * 20 ); 
+    });
+
+
     $("#formschedule").submit(function( event ) {
         //document.getElementsByClassName("alert").style.display ="block";        
         //$('#formschedule #alert').toggle();
         event.preventDefault();                        
-      })
+    })
 
+    $("#submit").bind("click", function(){
+
+    });
+    
 });

@@ -64,7 +64,6 @@
 
     <main>
         <div class="container">
-
             <div class="row schedule-form">
                 <div class="col-sm-8 offset-sm-2">
                   <h4 class="mt-2"> Schedule Workout</h4>
@@ -116,16 +115,16 @@
                 </div>
         </div>                                                      
                                         
-          <div class="row logworkouttable">
+        <div class="row logworkouttable">
                 <div class="col-sm-8 offset-sm-2">
                         <h4 class="mt-2"> Log Workout</h4>
                     <table class="table" id="tablelog">
                         <thead>
-                            <tr>
+                            <tr>                            
                                 <th scope="col">Workout</th>
                                 <th scope="col">Time/Steps</th>
                                 <th scope="col">Calories</th>
-                                <th class = "colwidth" scope="col">Action</th>
+                                <th class = "colwidth" scope="col">Action</th>                            
                             </tr>
                         </thead>
                         <tbody id="table_body">
@@ -133,20 +132,23 @@
                                 <td>Cardio</td>
                                 <td>30</td>
                                 <td>250</td>
-                                <td>
+                                <td class = "colwidth">
+                                        <span>
                                     <a class="add" title="Add" data-toggle="tooltip" data-placement="top">
                                         <i class="material-icons">&#xE03B;</i></a> 
                                     <a class="edit" title="Edit" data-toggle="tooltip">
                                         <i class="material-icons">&#xE254;</i></a>                                    
                                     <a class="delete" title="Delete" data-toggle="tooltip">
                                         <i class="material-icons">&#xE872;</i></a>
+                                        </span> 
                                 </td>
                             </tr>
                             <tr>
                                 <td>Walking</td>
                                 <td>30</td>
                                 <td>250</td>
-                                <td>
+                                <td class = "colwidth"> 
+                                        <span>
                                     <a class="add" title="Add" data-toggle="tooltip">
                                         <i class="material-icons">&#xE03B;</i>
                                     </a>
@@ -155,7 +157,7 @@
                                     </a>
                                     <a class="delete" title="Delete" data-toggle="tooltip">
                                         <i class="material-icons">&#xE872;</i></a>
-
+                                        </span>        
                                 </td>
                             </tr>
                             <tr>
@@ -163,6 +165,7 @@
                                     <td>30</td>
                                     <td>250</td>
                                     <td>
+                                        <span>
                                         <a class="add" title="Add" data-toggle="tooltip">
                                             <i class="material-icons">&#xE03B;</i>
                                         </a>
@@ -171,7 +174,7 @@
                                         </a>
                                         <a class="delete" title="Delete" data-toggle="tooltip">
                                             <i class="material-icons">&#xE872;</i></a>
-    
+                                        </span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -179,6 +182,7 @@
                                         <td>30</td>
                                         <td>250</td>
                                         <td>
+                                                <span>
                                             <a class="add" title="Add" data-toggle="tooltip">
                                                 <i class="material-icons">&#xE03B;</i>
                                             </a>
@@ -187,7 +191,7 @@
                                             </a>
                                             <a class="delete" title="Delete" data-toggle="tooltip">
                                                 <i class="material-icons">&#xE872;</i></a>
-        
+                                            </span>
                                         </td>
                                     </tr>
             
@@ -196,6 +200,7 @@
                                 <td>30</td>
                                 <td>250</td>
                                 <td>
+                                    </span>
                                     <a class="add" title="Add" data-toggle="tooltip">
                                         <i class="material-icons">&#xE03B;</i>
                                     </a>
@@ -204,6 +209,7 @@
                                     </a>
                                     <a class="delete" title="Delete" data-toggle="tooltip">
                                         <i class="material-icons">&#xE872;</i></a>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -218,12 +224,13 @@
                                 </td>
                                 <td>
                                     <input type="number" min="0" max="10000" 
-                                        class="inputcontrol form-control" id="steps" placeholder="0">
+                                        class="inputcontrol form-control steps" id="steps" placeholder="0">
                                 </td>
                                 <td>
-                                    <input type="number" class="inputcontrol form-control" id="calories">
+                                    <input type="number" class="inputcontrol form-control calories" id="calories">
                                 </td>
                                 <td>
+                                    <span>
                                     <a class="add" title="Add" data-toggle="tooltip">
                                         <i class="material-icons">&#xE03B;</i>
                                     </a>
@@ -232,16 +239,16 @@
                                     </a>
                                     <a class="delete" title="Delete" data-toggle="tooltip">
                                         <i class="material-icons">&#xE872;</i></a>
+                                    </span>    
                                 </td>
                             </tr>
                         </tbody>
 
                     </table>
                 </div>
-            </div>
+        </div>
 
         </div> <!-- /container -->
-
     </main>
 
 
