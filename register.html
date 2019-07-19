@@ -10,16 +10,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/stylesheet.css">
-
   <title>workOut Dummies</title>
   
-  <style type="text/css">
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -63,13 +55,13 @@
 
   <main>
  
+    <!-- begining of the container -->
     <div class="container signup-form">
-        <h2 class="display-5 mb-5"> Registration</h2>
-                        
-        <div class="row">                    
-            <div class="col-md-12">                
-              <form action ="#" method="POST">
-                <div class="row">                    
+        <h2 class="display-5 mb-5"> Registration</h2>                        
+        <div class="row">   
+          <form action="register.html" method="GET" id="formregister" name="formregister">          
+            <div class="col-md-12">                                           
+              <div class="row">                    
                     <div class="col-md-6">                
                         <div class="form-group">
                             <div class="row">
@@ -78,37 +70,36 @@
                             </div>        	
                         </div>
                         
-                          <div class="form-group">
+                        <div class="form-group">
                               <input type="email" class="form-control" name="email" placeholder="Email" required="required">
-                          </div>
-                          <div class="form-group">
+                        </div>
+                        <div class="form-group">
                               <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-                          </div>
-                          <div class="form-group">
+                        </div>
+                        <div class="form-group">
                               <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
-                          </div>                                   
-        
-                            <div class="form-group">                                                        
+                        </div>                                         
+                        <div class="form-group">                                                        
                                 <input type="tel" class="form-control" id="phone" placeholder="Phone (999-999-9999)" required="required" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">                        
-                            </div>
+                        </div>
         
-                            <p class="form-check-label"> How did you hear about us?</p>
-                            <div class="form-check form-check-inline">
+                        <p class="form-check-label"> How did you hear about us?</p>
+                        <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="friends">
                                 <label class="form-check-label" for="inlineRadio1">Friend</label>
-                              </div>
-                              <div class="form-check form-check-inline">
+                        </div>
+                        <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="internet">
                                 <label class="form-check-label" for="inlineRadio2">Internet Search</label>
-                              </div>
-                              <div class="form-check form-check-inline">
+                        </div>
+                        <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="others" >
                                 <label class="form-check-label" for="inlineRadio3">Others</label>                                
-                              </div>                                        
-                              <div class="form-group">
+                        </div>                                        
+                        <div class="form-group">
                                 <input class="form-control" type ="text" id = "Others">
-                              </div>
-                    </div>
+                        </div>
+                    </div>                    
                     <div class="col-md-6">
                             <div class="form-group">  
                                 <div class="row">
@@ -119,7 +110,7 @@
                                         <input type="number" class="form-control number" id="hight" min="0" max="10" placeholder="Hight" required="required" >                                                                
                                     </div>
                                     <div class="col-sm-3">
-                                        <input type="number" class="form-control" id="hight" min="0" max="100" placeholder="Age" required="required" >                        
+                                        <input type="number" class="form-control" id="age" min="0" max="100" placeholder="Age" required="required" >                        
                                     </div>
                                 </div>                                                      
                             </div>
@@ -162,30 +153,23 @@
                                   <div class="col-sm-3"><input type="text" class="form-control" id = "zip" name="Zip" placeholder="Zip" required="required"></div>
                                 </div>        	
                             </div>                            
-                    </div>                                       
-                </div>
-
-                <div class="row">                  
-                    <div class="col-md-12 text-center">                                  
-                      <button type="reset" class="btn btn-primary">Reset</button>  
-                      <button type="submit" class="btn btn-primary">Submit</button>                            
-                    <div>                                  
-                </div>    
-
-               </form>           
-            </div>  
-
+                    </div>                       
+               </div>                    
+               <div class="row">
+                  <button type="reset" class=" form-control btn btn-primary">Reset</button>
+                  <br  >
+                  <button type="submit" class="form-control btn btn-primary">Submit</button>
+               </div>                 
+            </div>
+          </form> 
         </div>    
         <div class="row">                       
             <div class="text-center ">Already have an account?<a href="login.html"> Login Here</a></div>
-        </div>    
-        
-        
-    </div> <!-- /container -->
-  
+        </div>                    
+    </div> 
+    <!-- end of the container -->
   </main>
-
-
+  
   <!-- Begining of footer -->
   <footer class="container">
     <p>&copy; Company 2017-2019</p>
