@@ -1,8 +1,14 @@
+@media only screen and (max-width: 990px) {
+    .btnjoinus {
+        display: none;
+    }
+}
+
 .fa-check {
     color: green;
-  }
+}
 
-  .image-profile {
+.image-profile {
     width: 100px;
     height: 100px;
-  }
+}
