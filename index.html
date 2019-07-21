@@ -9,14 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css">
-
+    <link rel="stylesheet" href="css/index.css">
     <title>workoutDummies</title>
-    <style>
-        .modal-title,
-        .close {
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -24,15 +18,11 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
         <a class="navbar-brand" href="#">workoutDummies</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <div class="ml-auto">
                 <ul class="navbar-nav my-2 my-lg-0">
-                    <!--<li class="nav-item">
-                        <a class="nav-link" href="logworkout.html">Log workout </a>
-                    </li>
-                    -->
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
                     </li>
@@ -55,16 +45,17 @@
             <div class="container">
                 <h1>workoutDummies</h1>
                 <p class="lead"> State of the art gym <span>
-                <a class="btn btn-primary btn-sm" href="register.html" role="button">Join Us</a>
-                </span></p>
+                        <a class="btn btn-primary btn-sm" href="register.html" role="button">Join Us</a>
+                    </span></p>
             </div>
         </div>
     </header>
     <!--End header -->
 
     <main>
+        <!-- beging of main container-->
         <div class="container home-form" id="maincontainer">
-            <!-- Row1 -->
+            <!-- Figure images row1 -->
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-center">
@@ -72,7 +63,7 @@
                             <img src="img/workout.jpeg" class="figure-img img-fluid rounded" alt="workout">
                             <figcaption class="figure-caption text-right">Weight Lifting</figcaption>
                         </figure>
-                        <h3>Weight Lifting</h3>
+                        <h2>Weight Lifting</h2>
                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
                             dui. </p>
                         <p><a class="btn text-white btn-secondary " role="button" data-toggle="modal" data-target="#mymodal">View details &raquo;</a></p>
@@ -84,8 +75,7 @@
                             <img src="img/cycling.jpg" class="figure-img img-fluid rounded" alt="cycling">
                             <figcaption class="figure-caption text-right">Cycling</figcaption>
                         </figure>
-
-                        <h3>Cycling</h3>
+                        <h2>Cycling</h2>
                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
                             dui. </p>
                         <p><a class="btn text-white btn-secondary " role="button" data-toggle="modal" data-target="#mymodal">View details &raquo;</a></p>
@@ -97,7 +87,6 @@
                             <img src="img/running.jpg" class="figure-img img-fluid rounded" alt="running">
                             <figcaption class="figure-caption text-right">Cardio</figcaption>
                         </figure>
-
                         <h2>Cardio</h2>
                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
                             dui. </p>
@@ -105,8 +94,9 @@
                     </div>
                 </div>
             </div>
+            <!-- End of Figure images row1 -->
 
-            <!-- Row2 -->
+            <!-- Figure images row1 row2 -->
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-center">
@@ -114,7 +104,6 @@
                             <img src="img/yoga.jpg" class="figure-img img-fluid rounded" alt="yoga">
                             <figcaption class="figure-caption text-right">Yoga</figcaption>
                         </figure>
-
                         <h2>Yoga</h2>
                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
                             dui. </p>
@@ -139,7 +128,6 @@
                             <img src="img/crossfit-full.jpg" class="figure-img img-fluid rounded" alt="crossfit">
                             <figcaption class="figure-caption text-right">Crossfit</figcaption>
                         </figure>
-
                         <h2>Crossfit</h2>
                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
                             dui. </p>
@@ -148,10 +136,11 @@
                 </div>
 
             </div>
+            <!-- End of Figure images row1 row2 -->
 
             <hr>
 
-            <!-- Modal -->
+            <!-- Modal screen begins here -->
             <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="mymodalTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable" role="document">
                     <div class="modal-content">
@@ -160,17 +149,17 @@
                                 Running
                             </h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body">
-
                             <div class="text-center">
-                                <video id="vid" width="310" height="175" controls>
-                  <source src="media/videoplayback.mp4" type="video/mp4">
-                  <source src="media/videoplayback.webm" type="video/webm">
-                  Your browser does not support the video tag.
-                </video>
+                                <!-- video control-->
+                                <video id="vid" controls>
+                                    <source src="media/videoplayback.mp4" type="video/mp4">
+                                    <source src="media/videoplayback.webm" type="video/webm">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                             <hr class="my-4">
                             <h5>30 Minutes of running</h5>
@@ -196,10 +185,10 @@
                                 </li>
                                 <li>
                                     <span class="detail-header">Training Type:</span>
-                                    <span class="detail-value demi">Low Impact, Pilates, Strength Training, Toning</span>
+                                    <span class="detail-value demi">Low Impact, Pilates, Strength Training,
+                                        Toning</span>
                                 </li>
                             </ul>
-
                         </div>
                         <div class="modal-footer">
                             <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -207,13 +196,10 @@
                     </div>
                 </div>
             </div>
-            <!-- End Modal -->
-
+            <!-- End of Modal -->
         </div>
-        <!-- /container -->
-
+        <!-- End of main container -->
     </main>
-
 
     <!-- Begining of footer -->
     <footer class="container">
@@ -221,13 +207,11 @@
     </footer>
     <!-- End of container -->
 
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
-
 </body>
 
 </html>
