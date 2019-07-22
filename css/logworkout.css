@@ -3,7 +3,11 @@
         width: 30%
     }
     body {
-        background-color: lightblue;
+        background-color: lightgray;
+    }
+    table.table {
+        border-style: solid;
+        border-color: white;
     }
 }
 
@@ -30,10 +34,3 @@ table.table td .add {
 .colwidth {
     width: 30%;
 }
-
-
-/*
-form .alert {
-    display: none;    
-}
-*/
